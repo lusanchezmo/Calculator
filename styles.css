@@ -1,0 +1,151 @@
+:root{
+    --dark:rgb(0, 0, 0);
+    --white:#FFFF;
+    --gris:rgb(59, 59, 59);
+    --grisLight:rgb(117, 115, 115);
+    --blue:rgb(27, 142, 250);
+    --blueDark:rgb(41, 45, 252);
+    --blueLight:rgb(8, 191, 247);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    margin-top: 3vh;
+    margin-left: 35%;
+    border-radius: 20px;
+    background-color: var(--dark);
+    height: 90vh;
+    width: 50vh;
+}
+
+.screen{
+    padding: 0;
+    margin: 0;
+    padding-top: 60%;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+p{
+    color: var(--white);
+    text-align: right;
+}
+
+h1{
+    color: var(--white);
+    text-align: right;
+}
+
+.bottoms{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50vh;
+    height: 44vh;
+}
+
+.numbers{
+    margin: 0;
+    padding: 0;
+    margin-left: 8%;
+    width: 80%;
+    height: 18vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 28%);
+    grid-gap: 5%;
+    column-gap: 5%;
+    grid-auto-rows: 40%;
+}
+
+.ac{
+    background-color: var(--grisLight);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.delete{
+    background-color: var(--grisLight);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.division{
+    background-color: var(--blueDark);
+    color: var(--white);
+}
+
+.cero{
+    border-radius: 20%;
+    width: 215%;
+}
+
+
+.point{
+    margin-left: 115%;
+    width: 100%;
+}
+.signs{
+    margin: 0;
+    padding: 0;
+    margin-right: 8%;
+    width: 20%;
+    height: 18vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    gap: 5%;
+    grid-auto-rows: 7.2vh 7.2vh 11vh 11vh;
+}
+
+.multiplication{
+    border-radius: 20%;
+    background-color: var(--blueDark);
+    color: white;
+}
+
+.subtraction{
+    border-radius: 20%;
+    background-color: var(--blueDark);
+    color: white;
+}
+
+.sum{
+    padding-top: 40%;
+    border-radius: 20%;
+    background-color: var(--blueDark);
+}
+
+.equal{
+    padding-top: 40%;
+    border-radius: 20%;
+    background-color: var(--blueLight);
+    color: white;
+}
+
+ul > div{
+    margin: 0;
+    padding: 0;
+    color: var(--blue);
+    font-size: large;
+    border-radius: 20%;
+    background-color: var(--gris);
+    text-align: center;
+    padding-top: 20%;
+}
+
+ul > li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--white);
+    text-align: center;
+    padding-top: 20%;
+    font-size: large;
+}
+
