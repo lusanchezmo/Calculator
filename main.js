@@ -23,6 +23,7 @@ function putAc() {
     input.innerHTML = '|';
 }
 
+
 function putCero(){
     if(input.textContent == '|') input.innerHTML = 0;
     else input.innerHTML = input.textContent + 0;
@@ -74,17 +75,34 @@ function putNine(){
 }
 
 function putSum(){
-    if(input.textContent == '|') input.innerHTML = '+';
+    if(input.textContent == '|') {
+        input.innerHTML = '+';
+        ans = 0;
+        operation = '+';
+    }
     else {
-        input.innerHTML = input.textContent + '+';
+        if(inputAns.textContent == '|') {
+            inputAns.innerHTML = input.textContent + '+';
+            ans = input.textContent;
+            operation = '+';
+            input.innerHTML = '|';
+        } else {
+            putEqual();
+            operation = '+';
+            input.innerHTML = '|';
+        }
        
     }
 }
 
 function putEqual(){
-    if(input.textContent == '|') input.innerHTML = '=';
-    else {
-
+    num = input.textContent;
+    if(operation == '+'){
+        
+        inputAns.innerHTML = inputAns.textContent + input.textContent + '+';
+        let a = (parseInt(ans)+parseInt(num));
+        input.innerHTML = a;
+        ans = a;
     }
 }
 
