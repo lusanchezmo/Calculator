@@ -21,34 +21,35 @@
         </section>
 
         <section class="screen">
-            <p>100/23+34</p>
-            <h1>=2400</h1>
+            <p>|</p>
+            <h1>|</h1>
         </section>
 
         <section class="bottoms">
             <ul class="numbers">
-                <div class="ac">Ac</div>
+                <div class="ac" onclick="putAc()">Ac</div>
                 <div class="delete"> <-- </div>
                 <div class="division">/</div>
-                <div class="seven">7</div>
-                <div class="eight">8</div>
-                <div class="nine">9</div>
-                <div class="four">4</div>
-                <div class="five">5</div>
-                <div class="six">6</div>
-                <div class="one">1</div>
-                <div class="two">2</div>
-                <div class="three">3</div>
-                <div class="cero">0</div>
+                <div class="seven" onclick="putSeven()">7</div>
+                <div class="eight" onclick="putEight()">8</div>
+                <div class="nine" onclick="putNine()">9</div>
+                <div class="four" onclick="putFour()">4</div>
+                <div class="five" onclick="putFive()">5</div>
+                <div class="six" onclick="putSix()">6</div>
+                <div class="one" onclick="putOne()">1</div>
+                <div class="two" onclick="putTwo()">2</div>
+                <div class="three" onclick="putThree()">3</div>
+                <div class="cero" onclick="putCero()">0</div>
                 <div class="point">.</div>
             </ul>
             <ul class="signs">
                 <li class="multiplication">*</li>
                 <li class="subtraction">-</li>
-                <li class="sum">+</li>
-                <li class="equal">=</li>
+                <li class="sum" onclick="putSum()">+</li>
+                <li class="equal" onclick="putEqual()">=</li>
             </ul>
         </section>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
