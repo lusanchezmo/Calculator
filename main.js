@@ -95,12 +95,97 @@ function putSum(){
     }
 }
 
+
+function putSubtraction(){
+    if(input.textContent == '|') {
+        input.innerHTML = '-';
+        ans = 0;
+        operation = '-';
+    }
+    else {
+        if(inputAns.textContent == '|') {
+            inputAns.innerHTML = input.textContent + '-';
+            ans = input.textContent;
+            operation = '-';
+            input.innerHTML = '|';
+        } else {
+            putEqual();
+            operation = '-';
+            input.innerHTML = '|';
+        }
+       
+    }
+}
+
+function putMultiplication(){
+    if(input.textContent == '|') {
+        input.innerHTML = '*';
+        ans = 0;
+        operation = '*';
+    }
+    else {
+        if(inputAns.textContent == '|') {
+            inputAns.innerHTML = input.textContent + '*';
+            ans = input.textContent;
+            operation = '*';
+            input.innerHTML = '|';
+        } else {
+            putEqual();
+            operation = '*';
+            input.innerHTML = '|';
+        }
+       
+    }
+}
+
+function putDivision(){
+    if(input.textContent == '|') {
+        input.innerHTML = '/';
+        ans = 0;
+        operation = '/';
+    }
+    else {
+        if(inputAns.textContent == '|') {
+            inputAns.innerHTML = input.textContent + '/';
+            ans = input.textContent;
+            operation = '/';
+            input.innerHTML = '|';
+        } else {
+            putEqual();
+            operation = '/';
+            input.innerHTML = '|';
+        }
+       
+    }
+}
+
 function putEqual(){
     num = input.textContent;
+    
     if(operation == '+'){
-        
         inputAns.innerHTML = inputAns.textContent + input.textContent + '+';
-        let a = (parseInt(ans)+parseInt(num));
+        let a = (parseFloat(ans)+parseFloat(num));
+        input.innerHTML = a;
+        ans = a;
+    }
+
+    if(operation == '-'){
+        inputAns.innerHTML = inputAns.textContent + input.textContent + '-';
+        let a = (parseFloat(ans)-parseFloat(num));
+        input.innerHTML = a;
+        ans = a;
+    }
+
+    if(operation == '*'){
+        inputAns.innerHTML = inputAns.textContent + input.textContent + '*';
+        let a = (parseFloat(ans)*parseFloat(num));
+        input.innerHTML = a;
+        ans = a;
+    }
+
+    if(operation == '/'){
+        inputAns.innerHTML = inputAns.textContent + input.textContent + '/';
+        let a = (parseFloat(ans)/parseFloat(num));
         input.innerHTML = a;
         ans = a;
     }
