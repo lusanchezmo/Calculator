@@ -164,6 +164,10 @@ function onDelete() {
     input.innerHTML = b.substr(0, b.length - 1);
 }
 
+function putPoint() {
+    input.innerHTML = input.textContent + '.';
+}
+
 function putEqual(){
     num = input.textContent;
     
