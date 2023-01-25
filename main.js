@@ -159,6 +159,11 @@ function putDivision(){
     }
 }
 
+function onDelete() {
+    let b = input.textContent;
+    input.innerHTML = b.substr(0, b.length - 1);
+}
+
 function putEqual(){
     num = input.textContent;
     
